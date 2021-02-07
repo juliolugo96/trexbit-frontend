@@ -1,0 +1,83 @@
+// Import bulma styles
+@import '~bulma/sass/utilities/_all';
+
+// Set your colors
+$primary: #60435f;
+$link: #ecd4af;
+$background-color: linear-gradient(90deg, #82c91e 5%, #3bc9db 95%);
+$footer-background-color: #2c2f34;
+$link-hover: $primary;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  'white': (
+    $white,
+    $black,
+  ),
+  'black': (
+    $black,
+    $white,
+  ),
+  'light': (
+    $light,
+    $light-invert,
+  ),
+  'dark': (
+    $dark,
+    $dark-invert,
+  ),
+  'primary': (
+    $primary,
+    $primary-invert,
+  ),
+  'info': (
+    $info,
+    $info-invert,
+  ),
+  'success': (
+    $success,
+    $success-invert,
+  ),
+  'warning': (
+    $warning,
+    $warning-invert,
+  ),
+  'danger': (
+    $danger,
+    $danger-invert,
+  ),
+);
+
+// Import Bulma and Buefy styles
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
+
+@for $i from 0 through 4 {
+  $width: ($i * 5);
+  // Margin
+  .mt-#{$width} {
+    margin-top: #{$width}px;
+  }
+  .ml-#{$width} {
+    margin-left: #{$width}px;
+  }
+  .mr-#{$width} {
+    margin-right: #{$width}px;
+  }
+  .mb-#{$width} {
+    margin-bottom: #{$width}px;
+  }
+  // Padding
+  .pt-#{$width} {
+    padding-top: #{$width}px;
+  }
+  .pl-#{$width} {
+    padding-left: #{$width}px;
+  }
+  .pr-#{$width} {
+    padding-right: #{$width}px;
+  }
+  .pb-#{$width} {
+    padding-bottom: #{$width}px;
+  }
+}
