@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section key="section">
     <b-field grouped group-multiline>
       <b-button
         label="Add User"
